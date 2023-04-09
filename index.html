@@ -4,30 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Where in friday</title>
+    <title>SoundBar</title>
     <link rel="stylesheet" href="scripts/style_common.css">
 </head>
 <body>
     <div class ="header">
-        <h1>Где в пятницу</h1>
-        <a href="index.html">На главную страницу ></a>
-        <a href="catalog.html">Каталог ></a>
-        <a href="ListOfGenres.html">Жанры ></a>
-        <br>
+        <h1>SoundBar</h1>
+        <h3>Выбери место по музыкальным предпочтениям</h3>
+    </div>
+    <div class="my_flex_container2">
+        <div class="left"><a href="index.html">На главную страницу ></a><a href="aboutUs.html">О нас ></a></div>
+        <div class="right"><a href="reg.html"> Регистрация/ Профиль >   </a><button class="my-button">Поиск</button></a></div>
         
     </div>
     
-    
     <div class="container">
-        <h2>Выбери место по музыкальным предпочтениям</h2>
-        <h6>Под какую музыку хочешь отдохнуть</h6>
+        
+        <!-- <h6>Под какую музыку хочешь отдохнуть</h6>
         <u>подчеркнутый</u>
         <s>зачеркнутый</s>
         <b>полужирный</b>
         <i>курсив</i>
         <br>
-        <img src="/Users/anastasiabuglakova/Documents/GEEK/Диплом/diploma_project/img/images.jpeg" alt="">
+        <img src="/Users/anastasiabuglakova/Documents/GEEK/Диплом/diploma_project/img/images.jpeg" alt=""> -->
         
+        <p>Выбери</p>
+        <div class="my_flex_container_choose">
+            <div class="my_flex_choose">
+                <div class="legend">Какая музыка</div>
+                    <p>
+                        <input type="radio"name="genre"value="Рок мировой">Рок мировой<br>
+                        <input type="radio"name="genre"value="Хип-хоп">Хип-хоп<br>
+                        <input type="radio"name="genre"value="Электронная">Электронная<br>
+                        <input type="radio"name="genre"value="Рок русский">Рок русский<br>
+                        <input type="radio"name="genre"value="Поп мировой">Поп мировой<br>
+                        <input type="radio"name="genre"value="Поп русский">Поп русский<br>
+                    </p>
+                    <button class="my-button">Выбрано</button>
+                </fieldset>
+
+                    
+            </div>
+            <div class="my_flex_choose">
+                <div class="legend">Куда пойдем</div>
+                    <p>
+                        <input type="checkbox"name="format"value="bar">Бар<br>
+                        <input type="checkbox"name="format"value="club">Клуб<br>
+                        <input type="checkbox"name="format"value="bar and dancefloor">Концерт<br>
+                        <input type="checkbox"name="format"value="karaoke">Караоке<br>
+                        <input type="checkbox"name="format"value="bar and dancefloor">Кафе<br>
+                        
+                    </p>
+                    <button class="my-button">Выбрано</button>
+            </div>
+
+            <div class="my_flex_choose">
+                <div class="legend">Опции</div>
+                    <p>
+                        <input type="checkbox"name="format"value="bar">С танцполом<br>
+                    </p>    
+                    <p>
+                        <input type="checkbox"name="format"value="bar">Можно казакать свою песню <br>
+                    </p> 
+                    <button class="my-button">Показать на карте</button>
+                
+            </div>
+
         <p>Посмотри самые популярные заведения в Москве.</p>
         <div class="my_flex_container">
             <div class="my_flex_block">Заведение 1</div>
@@ -45,13 +87,27 @@
         </div>
         <br>
     </div>
-    <div class="my_flex_container2">
-        <div class="left">Боковой банер 1</div>
-        <div class="right">Боковой банер 2</div>
-    </div>
+    <p>
+    </p>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1a6ebbceb701c76ed8b993621393a0618869fa51977951da5d89ae7a55538982&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+
+   
+    
+
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Можешь дать предолжения по улучшению сайта?</legend><br>
+            <p>
+                <textarea cols="64"rows="5"name="textAreaContent">Введи текст</textarea><br>
+                
+            <button class="my-button">Отправляем в проработку</button>
+        </fieldset>
+    </form>
+
     <div class="footer">
         <p>&copy Все права защищены</p>
         <br>
     </div>
+
 </body>
 </html>
