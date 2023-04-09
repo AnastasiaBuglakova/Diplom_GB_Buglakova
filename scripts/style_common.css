@@ -14,7 +14,7 @@ html {
 
 h1 {
     
-    color:#683909;
+    color: #ff8b00;
     font-size:  2rem;
     text-align: center;
     margin: 0;
@@ -32,6 +32,17 @@ img {
     width: max-content;
     border-radius: 22%;
 }
+
+.my-button {
+    background-color: black;
+    color: white;
+    
+    border-radius: 10px;
+
+
+  }
+  
+  
 /* 
 .container {
     min-height: calc(100vh-100px-150px);
@@ -68,11 +79,13 @@ body {
     background: url('../img/stirpes_blue.jpeg') fixed;
 }
 .header {
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ea8202+0,e0020d+0,ea8202+16,ea8202+16,ea8202+27,ea8202+46,f6e6b4+61,f6e6b4+70,f6e6b4+75,f6e6b4+75,f6e6b4+79,f6e6b4+79,f6e6b4+79,f6e6b4+79&1+0,0+97,1+100 */
-background: -moz-linear-gradient(top,  rgba(224,2,13,1) 0%, rgba(234,130,2,0.84) 16%, rgba(234,130,2,0.73) 27%, rgba(234,130,2,0.53) 46%, rgba(246,230,180,0.37) 61%, rgba(246,230,180,0.28) 70%, rgba(246,230,180,0.23) 75%, rgba(246,230,180,0.19) 79%, rgba(246,230,180,0) 97%, rgba(246,230,180,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(224,2,13,1) 0%,rgba(234,130,2,0.84) 16%,rgba(234,130,2,0.73) 27%,rgba(234,130,2,0.53) 46%,rgba(246,230,180,0.37) 61%,rgba(246,230,180,0.28) 70%,rgba(246,230,180,0.23) 75%,rgba(246,230,180,0.19) 79%,rgba(246,230,180,0) 97%,rgba(246,230,180,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(224,2,13,1) 0%,rgba(234,130,2,0.84) 16%,rgba(234,130,2,0.73) 27%,rgba(234,130,2,0.53) 46%,rgba(246,230,180,0.37) 61%,rgba(246,230,180,0.28) 70%,rgba(246,230,180,0.23) 75%,rgba(246,230,180,0.19) 79%,rgba(246,230,180,0) 97%,rgba(246,230,180,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0020d', endColorstr='#f6e6b4',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1da36+0,fefcea+89,fefcea+89,fefcea+89,fefcea+89,fefcea+92,fefcea+92 */
+background: rgb(241,218,54); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(241,218,54,1) 0%, rgba(254,252,234,1) 89%, rgba(254,252,234,1) 89%, rgba(254,252,234,1) 89%, rgba(254,252,234,1) 89%, rgba(254,252,234,1) 92%, rgba(254,252,234,1) 92%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(241,218,54,1) 0%,rgba(254,252,234,1) 89%,rgba(254,252,234,1) 89%,rgba(254,252,234,1) 89%,rgba(254,252,234,1) 89%,rgba(254,252,234,1) 92%,rgba(254,252,234,1) 92%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(241,218,54,1) 0%,rgba(254,252,234,1) 89%,rgba(254,252,234,1) 89%,rgba(254,252,234,1) 89%,rgba(254,252,234,1) 89%,rgba(254,252,234,1) 92%,rgba(254,252,234,1) 92%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1da36', endColorstr='#fefcea',GradientType=0 ); /* IE6-9 */
+
 }
 a {
     text-decoration: none;
@@ -88,7 +101,7 @@ a {
     margin: auto;
     width: 850px;
     height: auto;
-    border: 1px solid rgb(250, 0, 187);
+    /* border: 1px solid rgb(250, 0, 187); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -97,10 +110,10 @@ a {
     
 }
 .left {
-    width:60%;
+    width:50%;
     margin: auto; 
-    border: 1px solid rgb(250, 0, 187);
-    background: rgb(211, 224, 240);
+    /* border: 1px solid rgb(250, 0, 187); */
+    background: #ff8b00;
     display:flex;
     grid-template-columns: minmax(60px, auto)
     1fr minmax(60px, auto);
@@ -108,21 +121,47 @@ a {
     flex-grow: 1;
 }
 .right {
-    width:38%;
+    width:50%;
     margin: auto; 
-    border: 1px solid rgb(250, 0, 187);
-    background: rgb(223, 203, 243);
+    /* border: 1px solid rgb(250, 0, 187); */
+    background: #ff8b00;
     display:flex;
     grid-template-columns: minmax(60px, auto)
     1fr minmax(60px, auto);
     flex-shrink: 1;
     flex-grow: 1;
 }
+.my_flex_container_choose {
+    margin: auto;
+    width: 850px;
+    /* height: 550px; */
+    /* border: 1px solid rgb(250, 0, 187); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-between;
+    
+}
+.my_flex_choose {
+    margin: auto; 
+    text-align: center;
+    width: 230px;
+    height: 230px;
+    outline: 1px solid rgb(246, 250, 0);
+    background: rgb(235, 247, 200);
+    color: rgb(4, 39, 15);
+    font-size: 0.6em;
+    /* flex-grow: 1; */
+}
+.legend {
+    font-size: 1.3em;
+}
 .my_flex_container {
     margin: auto;
     width: 850px;
     height: 550px;
-    border: 1px solid rgb(250, 0, 187);
+    /* border: 1px solid rgb(250, 0, 187); */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -177,3 +216,59 @@ ul{
         color:rgba(0, 0, 0, 1);
     }
 } */
+
+
+/* вставка для формы */
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+/* .registerbtn {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+} */
+
+/* .registerbtn:hover {
+  opacity:1;
+} */
+
+/* Add a blue text color to links */
+/* a {
+  color: dodgerblue;
+} */
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: white;
+  text-align: center
