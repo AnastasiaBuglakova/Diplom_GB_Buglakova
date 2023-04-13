@@ -36,37 +36,14 @@ img {
 .my-button {
     background-color: black;
     color: white;
-    
     border-radius: 10px;
-
+    margin: 0 auto;
+    display: block;
 
   }
   
   
-/* 
-.container {
-    min-height: calc(100vh-100px-150px);
-    background: blanchedalmond;
-    /* overflow: hidden; */
-/* }
-.header{
-    background: burlywood;
-    height: 150px;
-}
-.left {
-    width:21%;
-    float:left;
-    background: rgb(211, 224, 240);
-}
-.right {
-    width:77%;
-    float:right;
-    background: rgb(223, 203, 243);
-}
-.footer{
-    height: 100px;
-    background: rgb(239, 192, 60);
-} */
+
 html, body{
     min-height: 100vh;
 }
@@ -99,7 +76,7 @@ a {
 }
 .my_flex_container2 {
     margin: auto;
-    width: 850px;
+    width: 900px;
     height: auto;
     /* border: 1px solid rgb(250, 0, 187); */
     display: flex;
@@ -145,7 +122,7 @@ a {
 }
 .my_flex_choose {
     margin: auto; 
-    text-align: center;
+    
     width: 230px;
     height: 230px;
     outline: 1px solid rgb(246, 250, 0);
@@ -156,10 +133,11 @@ a {
 }
 .legend {
     font-size: 1.3em;
+    text-align: center;
 }
 .my_flex_container {
     margin: auto;
-    width: 850px;
+    /* width: 850px; */
     height: 550px;
     /* border: 1px solid rgb(250, 0, 187); */
     display: flex;
